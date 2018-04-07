@@ -8,13 +8,21 @@
 
 namespace App\Controller\FacadeCalc;
 
+use App\Model\FacadeCalc\MathExpressionFacade;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
 
 class CalcController extends Controller
 {
     public function index()
     {
         return $this->render('base.html.twig');
+    }
+
+    public function maths($expression)
+    {
+        $mathExpression = new MathExpressionFacade($expression);
+        return $this->render('maths.html.twig', [
+            'solution' => $mathExpression->letsDoMath()
+        ]);
     }
 }
