@@ -8,8 +8,13 @@
 
 namespace App\Controller\FacadeCalc;
 
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
-class CalcController
+class CalcController extends Controller
 {
-
+    public function index()
+    {
+        return $this->render('base.html.twig');
+    }
 }
