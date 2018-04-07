@@ -1,3 +1,10 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+calcInfo:
+    path: /calc
+    controller: App\Controller\FacadeCalc\CalcController::index
+
+facadeCalc:
+    path: /calc/{expression}
+    controller: App\Controller\FacadeCalc\CalcController::maths
