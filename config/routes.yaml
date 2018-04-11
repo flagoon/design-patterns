@@ -1,10 +1,18 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-calcInfo:
-    path: /calc
-    controller: App\Controller\FacadeCalc\CalcController::index
+#calcInfo:
+#    path: /calc
+#    controller: App\Controller\FacadeCalc\CalcController::index
 
 facadeCalc:
     path: /calc/{expression}
     controller: App\Controller\FacadeCalc\CalcController::maths
+
+facadeDB:
+    path: /facade/db2src
+    controller: App\Controller\FacadeDB\FacadeDBController::db2src
+
+facadeSrc:
+    path: /facade/src2db
+    controller: App\Controller\FacadeDB\FacadeDBController::src2db
