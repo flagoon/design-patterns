@@ -20,3 +20,7 @@ facadeSrc:
 decoratorCofee:
     path: /coffee-maker
     controller: App\Controller\CoffeeMaker\CoffeeMaker::index
+
+decoratorXmass:
+    path: /mailsender
+    controller: App\Controller\MailSender\MailSender::index
