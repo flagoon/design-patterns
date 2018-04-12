@@ -16,3 +16,7 @@ facadeDB:
 facadeSrc:
     path: /facade/src2db
     controller: App\Controller\FacadeDB\FacadeDBController::src2db
+
+decoratorCofee:
+    path: /coffee-maker
+    controller: App\Controller\CoffeeMaker\CoffeeMaker::index
