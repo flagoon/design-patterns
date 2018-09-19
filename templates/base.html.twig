@@ -2,11 +2,16 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Calc Instructions{% endblock %}</title>
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <h2>This is simple calculator with facade</h2>
+    <p>if you want to use it, just add math expression after the /calc/ Possible actions:</p>
+        <ul style="list-style-type: none">
+            <li>+ sum</li>
+            <li>- subtraction</li>
+            <li>: divide</li>
+            <li>* multiply</li>
+        </ul>
     </body>
 </html>
